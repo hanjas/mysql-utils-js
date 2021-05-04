@@ -89,7 +89,6 @@ let queryList = [
 // The above function should return [shouldifailtransaction, result if succ else errobj, succmsg if succ else errmsg]
 // If ALL SUCCESS, callback will be called with (null, resultobj, succmsg); resultobj => {'queryid1':[resultforthisquery', 'queryid2':[]}
 // Even if one FAILS, callback will be called with ({'errs':errobj}, null, failmsg) and the transaction would have been rolled back
-
 sqlutils.getMysqlConnAndRunTran((err, data, msg) => {
     // handle all query result here
 }, queryList);
