@@ -1,16 +1,12 @@
 {
   "name": "mysql-utils-js",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A promise-based implemenation, designed for utilizing mysql easly",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "mysql",
-    "mysql-transaction",
-    "database"
-  ],
+  "keywords": [ "mysql", "mysql-transaction", "database" ],
   "author": "Hanjas",
   "license": "ISC",
   "dependencies": {
@@ -23,5 +19,6 @@
   },
   "bugs": {
     "url": "https://github.com/hanjas/mysql-utils-js/issues"
-  }
+  },
+  "homepage": "https://github.com/hanjas/mysql-utils-js/blob/master/README.md"
 }
