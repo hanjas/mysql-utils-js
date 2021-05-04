@@ -13,12 +13,12 @@ npm i --save mysql-utils-js
 ## Usage
 
 ```jsx
-const sqlutils = require('mysqlutils');
+const sqlutils = require('mysql-utils-js');
 
 const config = {
     host: 'localhost',
-    user: 'root',
-    password: 'toor',
+    user: 'username',
+    password: 'pwd',
     database: 'db1',
     connectionLimit: 5
 };
