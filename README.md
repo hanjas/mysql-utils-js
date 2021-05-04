@@ -72,10 +72,10 @@ let queryList = [
             let useid = results['queryid1'][1].insertId;    // taking userid from previous query result (from queryid1 result)
             return [userid]                                 // passing param value for query number 2
         },
-        err => [true, err, 'Update alarminfo failed.'],     // this will be called if any error happened while performing query
+        err => [true, err, 'Some error message'],           // this will be called if any error happened while performing query
         (_resAll, res) => (res && res.affectedRows > 0) ?   // _ressAll contains result of all query and res contains current query result
-            [false, res, 'Update alarminfo successful.']:   // returning sucess
-            [true, res, 'Update alarminfo failed.']         // returning failure
+            [false, res, 'Some success message']:           // returning sucess
+            [true, res, 'Some error message']               // returning failure
     ]
 ];
 
